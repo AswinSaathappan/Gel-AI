@@ -4,7 +4,6 @@ GelAI is a project that helps in **automatically analyzing gel electrophoresis i
 Usually, these images are examined manually by lab technicians, which takes time and depends on individual experience.  
 This project aims to reduce that manual effort by using image processing and deep learning.
 
----
 
 ## Problem Statement
 
@@ -16,7 +15,6 @@ This process is:
 
 There is very limited automation available for this task, especially in academic and small research labs.
 
----
 
 ## Our Solution
 
@@ -29,7 +27,6 @@ GelAI provides an automated pipeline that:
 
 The system is designed to **assist lab technicians**, not replace them.
 
----
 
 ## How It Works (Overview)
 
@@ -41,7 +38,6 @@ The system is designed to **assist lab technicians**, not replace them.
 
 This approach does not require labeled datasets.
 
----
 
 ## Technologies Used
 
@@ -50,7 +46,6 @@ This approach does not require labeled datasets.
 - Image Processing  
 - Unsupervised Deep Learning  
 
----
 
 ## Use Cases
 
@@ -59,11 +54,33 @@ This approach does not require labeled datasets.
 - Preliminary screening of gel results  
 - Reducing manual inspection effort  
 
----
 
 ## Disclaimer
 
 This project is a **decision-support tool** and does not perform medical diagnosis.  
 Final interpretation should always be done by qualified professionals.
 
----
+
+## Project Information
+
+- **Project Name:** GelAI  
+- **Domain:** Open Innovation (AI + Scientific Automation)  
+
+
+## Authors
+
+Developed by a student team as part of a hackathon project to explore the use of  
+image processing and unsupervised deep learning in laboratory automation.
+
+
+## License
+
+This project is intended for **educational and research purposes only**.  
+Reuse or extension of this work should include proper attribution.
+
+
+## Acknowledgements
+
+- Open-source research in image processing and deep learning  
+- Academic resources on gel electrophoresis analysis  
+
