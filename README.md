@@ -57,7 +57,7 @@ Final interpretation should always be done by qualified professionals.
 ## Project Information
 
 - **Project Name:** GelAI  
-- **Domain:** Open Innovation (AI + Scientific Automation)  
+- **Domain:** BioInformatics
 
 ## Authors
 
