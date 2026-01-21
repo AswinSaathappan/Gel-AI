@@ -1,58 +1,69 @@
-🧬 GelAI – Automated Gel Electrophoresis Analysis
+# GelAI – Gel Electrophoresis Analysis Tool
 
-GelAI is an AI-based system that automates the analysis of gel electrophoresis images using image processing and unsupervised deep learning.
-It assists laboratory technicians by identifying normal and anomalous band patterns without manual inspection.
+GelAI is a project that helps in **automatically analyzing gel electrophoresis images**.  
+Usually, these images are examined manually by lab technicians, which takes time and depends on individual experience.  
+This project aims to reduce that manual effort by using image processing and deep learning.
 
-🔍 Problem
+---
 
-Gel electrophoresis analysis is:
+## Problem Statement
 
-Manual and time-consuming
+Gel electrophoresis results are commonly analyzed by visual inspection to understand band patterns.  
+This process is:
+- Time-consuming  
+- Subjective (varies from person to person)  
+- Difficult to scale when many samples are involved  
 
-Subjective and operator-dependent
+There is very limited automation available for this task, especially in academic and small research labs.
 
-Difficult to scale and standardize
+---
 
-Existing tools are mostly rule-based and require manual tuning.
+## Our Solution
 
-💡 Solution
+GelAI provides an automated pipeline that:
+- Takes a gel electrophoresis image as input  
+- Cleans the image and extracts band patterns  
+- Uses an unsupervised deep learning model to learn common patterns  
+- Identifies whether a gel image appears normal or unusual  
+- Displays results in a clear and visual manner  
 
-GelAI provides an end-to-end automated pipeline that:
+The system is designed to **assist lab technicians**, not replace them.
 
-Cleans raw gel images using image processing
+---
 
-Extracts DNA band patterns
+## How It Works (Overview)
 
-Learns normal patterns using an unsupervised CNN autoencoder
+1. The input image is converted to grayscale  
+2. Noise and background are removed  
+3. DNA bands are enhanced and isolated  
+4. A CNN-based autoencoder learns normal band patterns  
+5. Images that deviate significantly are marked as anomalous  
 
-Detects anomalies based on reconstruction error
+This approach does not require labeled datasets.
 
-Visually explains the result
+---
 
-🧠 Key Features
+## Technologies Used
 
-No labeled data required
+- Python  
+- JavaScript / TypeScript  
+- Image Processing  
+- Unsupervised Deep Learning  
 
-Learns patterns directly from images
+---
 
-Highlights abnormal electrophoresis results
+## Use Cases
 
-Interpretable outputs (reconstruction + heatmap)
+- Research and academic laboratories  
+- Educational demonstrations  
+- Preliminary screening of gel results  
+- Reducing manual inspection effort  
 
-⚙️ Tech Stack (High Level)
+---
 
-Python – backend, image processing, AI
+## Disclaimer
 
-TypeScript / JavaScript – frontend
+This project is a **decision-support tool** and does not perform medical diagnosis.  
+Final interpretation should always be done by qualified professionals.
 
-Computer Vision + Unsupervised Deep Learning
-
-🧪 Use Case
-
-Lab workflow assistance
-
-DNA quality screening
-
-Reducing manual errors
-
-Educational and research labs
+---
