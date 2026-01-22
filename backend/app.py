@@ -1,8 +1,9 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import base64
 import numpy as np
 import cv2
+import os
 
 from utils.image_processing import process_image
 from utils.anomaly_detection import detect_anomaly
@@ -53,6 +54,15 @@ def analyze():
     except Exception as e:
         print("ERROR:", e)
         return jsonify({"error": str(e)}), 500
+
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
 
 
 if __name__ == "__main__":
